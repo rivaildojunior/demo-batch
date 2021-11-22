@@ -1,10 +1,8 @@
-package com.example.demobatch.batch;
+package com.example.demobatch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
-
-import com.example.demobatch.model.Autobot;
 
 public class AutobotItemProcessor implements ItemProcessor<Autobot, Autobot> {
 

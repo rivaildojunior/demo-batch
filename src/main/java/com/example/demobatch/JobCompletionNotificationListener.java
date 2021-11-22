@@ -1,5 +1,4 @@
-package com.example.demobatch.listener;
-
+package com.example.demobatch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,11 +8,12 @@ import org.springframework.batch.core.listener.JobExecutionListenerSupport;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import com.example.demobatch.model.Autobot;
-
 import java.util.List;
 
-
+/**
+ * @author Marcos Barbero
+ * @since 2018-02-10
+ */
 @Component
 public class JobCompletionNotificationListener extends JobExecutionListenerSupport {
 

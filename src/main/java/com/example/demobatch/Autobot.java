@@ -1,15 +1,10 @@
-package com.example.demobatch.model;
+package com.example.demobatch;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class Autobot {
 
-	@Id
-	private String name;
-    private String car;
+    private String name;
 
+    private String car;
     public Autobot() {
     }
 
@@ -32,5 +27,13 @@ public class Autobot {
 
     public void setCar(String car) {
         this.car = car;
+    }
+
+    @Override
+    public String toString() {
+        return "Autobot{" +
+                "name='" + name + '\'' +
+                ", car='" + car + '\'' +
+                '}';
     }
 }
